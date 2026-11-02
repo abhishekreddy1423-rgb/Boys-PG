@@ -22,7 +22,7 @@ window.HOSTEL_CONFIG = {
 
   // Contact Information
   contact: {
-    ownerName: "M. Mallikarjuna Reddy",
+    ownerName: "Sathish",
     ownerRole: "Owner & Resident Warden",
     ownerRoleTe: "ఓనర్ & రెసిడెంట్ వార్డెన్",
     phoneDisplay: "+91 63094 95985",
@@ -148,8 +148,8 @@ window.HOSTEL_CONFIG = {
       id: "2-sharing",
       title: "2 Sharing Executive Room",
       titleTe: "2 షేరింగ్ ఎగ్జిక్యూటివ్ గది",
-      badge: "Available",
-      badgeTe: "అందుబాటులో ఉంది",
+      badge: "Executive",
+      badgeTe: "ఎగ్జిక్యూటివ్",
       badgeType: "success",
       monthlyRent: 7000,
       deposit: 3000,
@@ -185,8 +185,8 @@ window.HOSTEL_CONFIG = {
       id: "3-sharing",
       title: "3 Sharing Comfort Room",
       titleTe: "3 షేరింగ్ కంఫర్ట్ గది",
-      badge: "Filling Fast",
-      badgeTe: "కొద్ది సీట్లు మాత్రమే",
+      badge: "Comfort Choice",
+      badgeTe: "కంఫర్ట్ ఛాయిస్",
       badgeType: "warning",
       monthlyRent: 5000,
       deposit: 3000,
@@ -222,8 +222,8 @@ window.HOSTEL_CONFIG = {
       id: "4-sharing",
       title: "4 Sharing Economy Room",
       titleTe: "4 షేరింగ్ ఎకానమీ గది",
-      badge: "Available",
-      badgeTe: "అందుబాటులో ఉంది",
+      badge: "Best Value",
+      badgeTe: "బెస్ట్ వాల్యూ",
       badgeType: "success",
       monthlyRent: 5000,
       deposit: 3000,
@@ -595,8 +595,8 @@ window.HOSTEL_CONFIG = {
       roleTe: "1వ సంవత్సరం ECE విద్యార్థి తండ్రి",
       rating: 5,
       avatar: "VR",
-      quote: "As a parent sending my son away for B.Tech, safety was my #1 concern. Mallikarjuna Reddy garu takes care of students like a family elder. The 9:30 PM gate lock and CCTV give us complete peace of mind.",
-      quoteTe: "మా అబ్బాయిని మొదటిసారి ఇంట్లో నుంచి పంపించినప్పుడు భద్రత గురించి చాలా భయపడ్డాము. కానీ మల్లికార్జున రెడ్డి గారు విద్యార్థులను కుటుంబ సభ్యుడిలా చూసుకుంటున్నారు. 9:30 PM గేట్ టైమింగ్ మరియు సీసీటీవీ మాకు ఎంతో నిశ్చింతను ఇచ్చాయి."
+      quote: "As a parent sending my son away for B.Tech, safety was my #1 concern. Sathish garu takes care of students like a family elder. The 9:30 PM gate lock and CCTV give us complete peace of mind.",
+      quoteTe: "మా అబ్బాయిని మొదటిసారి ఇంట్లో నుంచి పంపించినప్పుడు భద్రత గురించి చాలా భయపడ్డాము. కానీ సతీష్ గారు విద్యార్థులను కుటుంబ సభ్యుడిలా చూసుకుంటున్నారు. 9:30 PM గేట్ టైమింగ్ మరియు సీసీటీవీ మాకు ఎంతో నిశ్చింతను ఇచ్చాయి."
     },
     {
       id: 3,

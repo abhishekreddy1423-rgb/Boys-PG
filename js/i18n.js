@@ -40,8 +40,8 @@ window.I18N = {
       statRentSub: "₹5,000/mo (3 Meals Incl.)",
       statFoodLabel: "Food Included",
       statFoodSub: "3 Meals + Evening Snacks",
-      statVacancyLabel: "Seats Available",
-      statVacancySub: "Only 4 Beds Left",
+      statSecurityLabel: "24/7 Security",
+      statSecuritySub: "Safe & Disciplined",
 
       // Section Titles
       aboutSectionTitle: "About Sri Mallikarjuna Swami The Boys PG",
@@ -187,8 +187,8 @@ window.I18N = {
       statRentSub: "నెలకు ₹5,000 (3 పూటలా భోజనంతో)",
       statFoodLabel: "భోజన సదుపాయం",
       statFoodSub: "3 పూటలా భోజనం + సాయంత్రం స్నాక్స్",
-      statVacancyLabel: "మిగిలి ఉన్న సీట్లు",
-      statVacancySub: "కేవలం 4 బెడ్లు మాత్రమే మిగిలి ఉన్నాయి",
+      statSecurityLabel: "24/7 భద్రత",
+      statSecuritySub: "సీసీటీవీ నిఘా & రక్షణ",
 
       // Section Titles
       aboutSectionTitle: "శ్రీ మల్లికార్జున స్వామి ది బాయ్స్ పీజీ గురించి",
