@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyH1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="60%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="darkOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#0b1329" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0b1329" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="shadow3d">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="900" fill="url(#skyH1)" />
+  <circle cx="1350" cy="180" r="80" fill="#fef08a" opacity="0.8" />
+  
+  <!-- Ground -->
+  <rect y="640" width="1600" height="260" fill="#1e293b" />
+  <polygon points="0,640 1600,640 1600,660 0,660" fill="#cbd5e1" opacity="0.3" />
+
+  <!-- 3-Story Modern Hostel Building -->
+  <g filter="url(#shadow3d)">
+    <rect x="380" y="180" width="840" height="480" rx="12" fill="url(#buildingGrad)" stroke="#94a3b8" stroke-width="3" />
+    
+    <!-- Top Roof Border & Saffron/Orange Trim -->
+    <rect x="350" y="155" width="900" height="25" rx="6" fill="#0f2b48" />
+    <rect x="350" y="175" width="900" height="8" fill="#ea580c" />
+    
+    <!-- Solar Geyser & Water Storage on Roof -->
+    <rect x="440" y="100" width="160" height="55" rx="6" fill="#0284c7" />
+    <text x="520" y="135" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">RO MINERAL WATER</text>
+    <rect x="940" y="110" width="180" height="30" rx="4" fill="#475569" transform="rotate(-15 940 110)" />
+    <circle cx="1100" cy="95" r="28" fill="#ea580c" />
+    <text x="1100" y="100" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">24/7 HOT WATER</text>
+
+    <!-- Signboard -->
+    <rect x="470" y="200" width="660" height="65" rx="8" fill="#0f2b48" stroke="#f59e0b" stroke-width="3" />
+    <text x="800" y="235" fill="#fbbf24" font-family="'Segoe UI', Poppins, sans-serif" font-size="22" font-weight="800" text-anchor="middle" letter-spacing="1">SRI MALLIKARJUNA SWAMI THE BOYS PG</text>
+    <text x="800" y="255" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle">OPPOSITE MITS COLLEGE STREET • ANGALLU</text>
+
+    <!-- Floor 3 Windows -->
+    <rect x="470" y="290" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+    <rect x="670" y="290" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+    <rect x="870" y="290" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+    <rect x="1050" y="290" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+
+    <!-- Floor 2 Windows with Balconies -->
+    <rect x="470" y="410" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+    <rect x="460" y="475" width="150" height="15" rx="3" fill="#64748b" />
+    <rect x="670" y="410" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+    <rect x="660" y="475" width="150" height="15" rx="3" fill="#64748b" />
+    <rect x="870" y="410" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+    <rect x="860" y="475" width="150" height="15" rx="3" fill="#64748b" />
+    <rect x="1050" y="410" width="130" height="80" rx="6" fill="#38bdf8" opacity="0.35" stroke="#475569" stroke-width="3" />
+    <rect x="1040" y="475" width="150" height="15" rx="3" fill="#64748b" />
+
+    <!-- Ground Floor Grand Entrance -->
+    <rect x="730" y="525" width="140" height="135" rx="6" fill="#0f172a" stroke="#cbd5e1" stroke-width="3" />
+    <polygon points="700,525 900,525 920,510 680,510" fill="#ea580c" />
+    <rect x="740" y="535" width="55" height="125" fill="#38bdf8" opacity="0.5" />
+    <rect x="805" y="535" width="55" height="125" fill="#38bdf8" opacity="0.5" />
+    <circle cx="790" cy="600" r="4" fill="#ffffff" />
+    <circle cx="810" cy="600" r="4" fill="#ffffff" />
+
+    <!-- Security Gate & Surveillance Badge -->
+    <circle cx="700" cy="540" r="10" fill="#ef4444" />
+    <text x="700" y="543" fill="#fff" font-size="8" font-weight="bold" text-anchor="middle">CCTV</text>
+  </g>
+
+  <!-- Paved Parking with 2-Wheelers -->
+  <line x1="200" y1="670" x2="350" y2="880" stroke="#f1f5f9" stroke-width="6" stroke-dasharray="20 20" />
+  <line x1="450" y1="670" x2="600" y2="880" stroke="#f1f5f9" stroke-width="6" stroke-dasharray="20 20" />
+  <line x1="1000" y1="670" x2="1150" y2="880" stroke="#f1f5f9" stroke-width="6" stroke-dasharray="20 20" />
+
+  <!-- Natural Greenery -->
+  <ellipse cx="220" cy="590" rx="90" ry="110" fill="#15803d" opacity="0.95" />
+  <ellipse cx="1380" cy="590" rx="90" ry="110" fill="#15803d" opacity="0.95" />
+
+  <!-- Visual Overlay Gradient for crisp text readability -->
+  <rect width="1600" height="900" fill="url(#darkOverlay)" />
+</svg>

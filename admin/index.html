@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Warden Bed Management Portal - Sri Mallikarjuna Swami The Boys PG</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core & Admin Styles -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- ==============================================================
+       1. Password Lock Screen (Owner Only)
+       ============================================================== -->
+  <div class="admin-login-wrap" id="loginScreen">
+    <div class="admin-login-card">
+      <div class="admin-lock-icon">🔒</div>
+      <h1 class="admin-login-title">Warden Bed Portal</h1>
+      <p class="admin-login-sub">Sri Mallikarjuna Swami The Boys PG (Opp. MITS College)</p>
+
+      <div class="admin-disclaimer">
+        <strong>⚠️ Client-Side Lock Notice:</strong><br>
+        Because this website is completely serverless and runs on free static hosting without a backend database, this password screen is a basic client-side lock for the owner. It is not cryptographic server security and must not be used to protect sensitive personal records.
+      </div>
+
+      <form id="adminLoginForm" class="admin-form-group">
+        <div>
+          <label for="adminPasswordInput" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">Enter Warden Password:</label>
+          <div style="position:relative;">
+            <input type="password" id="adminPasswordInput" class="admin-input" placeholder="Enter password..." required autocomplete="current-password" style="padding-right:44px;">
+            <button type="button" id="togglePasswordBtn" class="btn-toggle-password" aria-label="Show password" title="Show/Hide password">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button type="submit" class="admin-login-btn">
+          <span>Unlock Portal</span>
+          <span>&rarr;</span>
+        </button>
+      </form>
+
+      <div id="adminLoginError" class="admin-login-error"></div>
+
+      <div style="margin-top:24px; font-size:0.78rem; color:var(--text-muted);">
+        <p style="margin:4px 0;"><a href="../" style="color:var(--primary-blue); text-decoration:none;">&larr; Back to Public Website</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================
+       2. Warden Bed Management Dashboard (Shown After Unlock)
+       ============================================================== -->
+  <div class="admin-dashboard" id="dashboardScreen" style="display:none;">
+    
+    <!-- Top Admin Header -->
+    <header class="admin-navbar">
+      <div class="admin-brand">
+        <span class="admin-brand-icon">🏠</span>
+        <div>
+          <div class="admin-brand-title">Warden Bed Manager</div>
+          <div class="admin-brand-subtitle">14 Rooms &bull; 49 Beds Total (Near MITS College)</div>
+        </div>
+      </div>
+      <div class="admin-nav-actions">
+        <a href="../" target="_blank" rel="noopener noreferrer" class="btn-nav-action" title="View Public Live Site">
+          <span>Public Website</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <button type="button" class="btn-nav-action btn-nav-logout" id="adminLogoutBtn">
+          <span>Lock / Logout</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Unpublished Changes Alert Banner -->
+    <div class="admin-unpublished-banner" id="unpublishedBanner" style="display:none;">
+      <div class="banner-content">
+        <span style="font-size:1.3rem;">⚠️</span>
+        <span>Bed status changed. Download <code>beds.json</code> and upload it to your site so students see the update.</span>
+      </div>
+      <button type="button" class="btn-banner-download" id="btnBannerDownload">
+        📥 Download beds.json Now
+      </button>
+    </div>
+
+    <!-- Main Container -->
+    <main class="admin-container">
+      
+      <!-- Top Summary: Total beds 49, Occupied, Reserved, Available, plus occupancy % -->
+      <section class="admin-stats-grid" aria-label="Bed Inventory Overview">
+        <div class="admin-stat-card stat-total">
+          <div class="admin-stat-icon">🛏️</div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="adminStatTotal">49</span>
+            <span class="admin-stat-label">Total Beds (14 Rooms)</span>
+          </div>
+        </div>
+
+        <div class="admin-stat-card stat-occupied">
+          <div class="admin-stat-icon">🔴</div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="adminStatOccupied">--</span>
+            <span class="admin-stat-label">Occupied</span>
+          </div>
+        </div>
+
+        <div class="admin-stat-card stat-reserved">
+          <div class="admin-stat-icon">🟡</div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="adminStatReserved">--</span>
+            <span class="admin-stat-label">Reserved</span>
+          </div>
+        </div>
+
+        <div class="admin-stat-card stat-avail">
+          <div class="admin-stat-icon">🟢</div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="adminStatAvail">--</span>
+            <span class="admin-stat-label">Available</span>
+          </div>
+        </div>
+
+        <div class="admin-stat-card stat-percent">
+          <div class="admin-stat-icon">📊</div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="adminStatPercent">--%</span>
+            <span class="admin-stat-label">Occupancy %</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Box: Find student by name, phone or room number -->
+      <section class="admin-search-section" aria-label="Search Beds and Students">
+        <div class="admin-search-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="adminSearchInput" class="admin-search-input" placeholder="Search by student name, phone number, or room number (e.g. 101, Ramesh, 98765)..." aria-label="Search student by name, phone or room number">
+        </div>
+      </section>
+
+      <!-- Action Toolbar (Large touch-friendly buttons for mobile phone use) -->
+      <section class="admin-toolbar" aria-label="Admin Actions Toolbar">
+        <div class="admin-btn-group">
+          <!-- Download beds.json (Public file to upload) -->
+          <button type="button" class="admin-btn admin-btn-primary" id="btnDownloadBeds" title="Download public beds.json without student details">
+            <span>📥 Download beds.json</span>
+          </button>
+
+          <!-- Quick enquiry finder for owner -->
+          <button type="button" class="admin-btn admin-btn-secondary" id="btnAvailableQuick" title="View quick list of all currently available beds for phone enquiries">
+            <span>⚡ Available Beds (<span id="btnQuickAvailCount">--</span>)</span>
+          </button>
+          
+          <!-- Backup Student Data (Private JSON) -->
+          <button type="button" class="admin-btn admin-btn-outline" id="btnBackupStudents" title="Download private backup of student records">
+            <span>💾 Backup Student Data</span>
+          </button>
+
+          <!-- Restore Backup -->
+          <button type="button" class="admin-btn admin-btn-outline" id="btnRestoreBackup" title="Restore student data from backup JSON">
+            <span>📂 Restore Backup</span>
+          </button>
+          <input type="file" id="fileRestoreBackup" accept=".json" style="display:none;" aria-hidden="true">
+        </div>
+
+        <div class="admin-btn-group">
+          <!-- Activity Log (Last 100 changes) -->
+          <button type="button" class="admin-btn admin-btn-outline" id="btnViewLog" title="View activity history">
+            <span>📜 Activity Log (100)</span>
+          </button>
+
+          <!-- Past Students -->
+          <button type="button" class="admin-btn admin-btn-outline" id="btnViewPast" title="View records of past students who vacated">
+            <span>🎓 Past Students</span>
+          </button>
+
+          <!-- Reset to Published -->
+          <button type="button" class="admin-btn admin-btn-outline" id="btnResetBeds" title="Discard local edits and load live published beds.json">
+            <span>🔄 Reset</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Filter Bars: Status & Room Type -->
+      <div class="admin-filter-container">
+        <!-- Status Filter -->
+        <div class="admin-filter-row">
+          <span class="filter-label">Bed Status:</span>
+          <button type="button" class="admin-filter-btn admin-status-filter-btn active" data-status="all">All Beds</button>
+          <button type="button" class="admin-filter-btn admin-status-filter-btn" data-status="available">🟢 Available</button>
+          <button type="button" class="admin-filter-btn admin-status-filter-btn" data-status="occupied">🔴 Occupied</button>
+          <button type="button" class="admin-filter-btn admin-status-filter-btn" data-status="reserved">🟡 Reserved</button>
+        </div>
+
+        <!-- Room Type Filter -->
+        <div class="admin-filter-row">
+          <span class="filter-label">Room Type:</span>
+          <button type="button" class="admin-filter-btn admin-type-filter-btn active" data-type="all">All Types (14 Rooms)</button>
+          <button type="button" class="admin-filter-btn admin-type-filter-btn" data-type="2-sharing">2 Sharing (Room 101)</button>
+          <button type="button" class="admin-filter-btn admin-type-filter-btn" data-type="3-sharing">3 Sharing (Rooms 102-106)</button>
+          <button type="button" class="admin-filter-btn admin-type-filter-btn" data-type="4-sharing">4 Sharing (Rooms 201-208)</button>
+        </div>
+      </div>
+
+      <!-- Rooms and Beds Interactive Grid -->
+      <section class="admin-rooms-grid" id="adminRoomsGrid" aria-label="Rooms and Beds Editor">
+        <!-- Dynamically rendered by js/admin.js -->
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ==============================================================
+       3. Modals & Notifications
+       ============================================================== -->
+
+  <!-- Flow 1: Allot / Reserve Bed Modal -->
+  <div class="admin-modal-overlay" id="allotModal" role="dialog" aria-modal="true" aria-labelledby="allotModalTitle">
+    <div class="admin-modal-box">
+      <h3 class="admin-modal-title" id="allotModalTitle">Allot / Reserve Bed</h3>
+      <p class="admin-modal-desc" id="allotRoomBedDisplay" style="font-weight:700; color:var(--primary-blue); margin-bottom:16px;">
+        Room -- - Bed #--
+      </p>
+
+      <form id="allotBedForm" class="admin-form-group">
+        <input type="hidden" id="allotRoom">
+        <input type="hidden" id="allotBed">
+
+        <div>
+          <label for="allotName" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">
+            Student Name <span style="color:var(--rose-red);">*</span>
+          </label>
+          <input type="text" id="allotName" class="admin-input" placeholder="e.g. Ramesh Kumar" required>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <div>
+            <label for="allotPhone" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">
+              Student Phone (10 digits) <span style="color:var(--rose-red);">*</span>
+            </label>
+            <input type="tel" id="allotPhone" class="admin-input" placeholder="9876543210" pattern="[6-9][0-9]{9}" required>
+          </div>
+          <div>
+            <label for="allotParentPhone" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">
+              Parent Phone (Optional)
+            </label>
+            <input type="tel" id="allotParentPhone" class="admin-input" placeholder="Parent contact number">
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <div>
+            <label for="allotJoinDate" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">
+              Join Date <span style="color:var(--rose-red);">*</span>
+            </label>
+            <input type="date" id="allotJoinDate" class="admin-input" required>
+          </div>
+          <div>
+            <label for="allotRent" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">
+              Monthly Rent (₹) <span style="color:var(--rose-red);">*</span>
+            </label>
+            <input type="number" id="allotRent" class="admin-input" required>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <div>
+            <label for="allotAdvance" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">
+              Advance Paid (₹)
+            </label>
+            <input type="number" id="allotAdvance" class="admin-input" placeholder="e.g. 2000">
+          </div>
+          <div>
+            <label for="allotStatusChoice" style="display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:var(--text-secondary);">
+              Bed Status
+            </label>
+            <select id="allotStatusChoice" class="admin-input">
+              <option value="occupied">Occupied (Joined)</option>
+              <option value="reserved">Reserved (Advance paid)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="admin-modal-footer">
+          <button type="button" class="admin-btn admin-btn-outline btn-modal-close">Cancel</button>
+          <button type="submit" class="admin-btn admin-btn-primary">Confirm Allotment &rarr;</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Flow 2: Occupied Bed Details Modal -->
+  <div class="admin-modal-overlay" id="occupiedModal" role="dialog" aria-modal="true" aria-labelledby="occupiedModalTitle">
+    <div class="admin-modal-box">
+      <h3 class="admin-modal-title" id="occupiedModalTitle">Bed Occupancy Details</h3>
+      <div id="occupiedModalContent"></div>
+      <div class="admin-modal-footer" style="margin-top:16px;">
+        <button type="button" class="admin-btn admin-btn-outline btn-modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flow 3: Move Student Modal -->
+  <div class="admin-modal-overlay" id="moveModal" role="dialog" aria-modal="true">
+    <div class="admin-modal-box" id="moveModalContent"></div>
+  </div>
+
+  <!-- Quick Available Beds Drawer Modal -->
+  <div class="admin-modal-overlay" id="availableBedsModal" role="dialog" aria-modal="true">
+    <div class="admin-modal-box" style="max-width:640px;">
+      <div id="availableBedsContent"></div>
+      <div class="admin-modal-footer">
+        <button type="button" class="admin-btn admin-btn-outline btn-modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Past Students Archive Modal -->
+  <div class="admin-modal-overlay" id="pastStudentsModal" role="dialog" aria-modal="true" aria-labelledby="pastModalTitle">
+    <div class="admin-modal-box" style="max-width:720px;">
+      <h3 class="admin-modal-title" id="pastModalTitle">Past Students History</h3>
+      <p class="admin-modal-desc">Archive of students who have vacated their beds, along with leaving dates.</p>
+      <div id="pastStudentsContent" style="max-height:360px; overflow-y:auto; margin-bottom:16px;"></div>
+      <div class="admin-modal-footer">
+        <button type="button" class="admin-btn admin-btn-outline btn-modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activity Log Modal (Last 100 changes) -->
+  <div class="admin-modal-overlay" id="activityLogModal" role="dialog" aria-modal="true" aria-labelledby="logModalTitle">
+    <div class="admin-modal-box" style="max-width:760px;">
+      <h3 class="admin-modal-title" id="logModalTitle">Bed Activity Log (Last 100 Changes)</h3>
+      <p class="admin-modal-desc">Tracks all allotments, vacates, reservations, and transfers made in this portal.</p>
+      
+      <div id="activityLogContent" style="max-height:380px; overflow-y:auto; margin-bottom:16px;"></div>
+
+      <div class="admin-modal-footer">
+        <button type="button" class="admin-btn admin-btn-outline btn-modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Generic Confirmation Modal -->
+  <div class="admin-modal-overlay" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmModalTitle">
+    <div class="admin-modal-box">
+      <h3 class="admin-modal-title" id="confirmModalTitle">Confirm Action</h3>
+      <p class="admin-modal-desc" id="confirmModalDesc">Are you sure you want to proceed?</p>
+      <div class="admin-modal-footer">
+        <button type="button" class="admin-btn admin-btn-outline btn-modal-close">Cancel</button>
+        <button type="button" class="admin-btn admin-btn-primary" id="btnConfirmAction">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Success Toast Notification -->
+  <div class="admin-toast" id="adminToast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="../js/config.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

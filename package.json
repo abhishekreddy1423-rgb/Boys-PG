@@ -1,0 +1,21 @@
+{
+  "name": "sri-mallikarjuna-swami-boys-pg",
+  "version": "1.0.0",
+  "description": "Official website for Sri Mallikarjuna Swami The Boys PG near MITS College, Angallu",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y serve . -l 3000",
+    "dev": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "hostel",
+    "pg",
+    "mits-college",
+    "angallu"
+  ],
+  "author": "Sri Mallikarjuna Swami The Boys PG",
+  "license": "MIT",
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}

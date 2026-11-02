@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tileBGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdfa" />
+      <stop offset="100%" stop-color="#ccfbf1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#tileBGrad)" />
+  <line x1="0" y1="140" x2="800" y2="140" stroke="#99f6e4" stroke-width="2" />
+  <line x1="0" y1="280" x2="800" y2="280" stroke="#99f6e4" stroke-width="2" />
+  <polygon points="0,420 800,420 800,600 0,600" fill="#0f766e" />
+
+  <!-- Geyser -->
+  <g transform="translate(140, 50)">
+    <rect x="0" y="0" width="100" height="150" rx="20" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+    <circle cx="50" cy="55" r="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+    <circle cx="40" cy="95" r="4" fill="#10b981" />
+    <circle cx="60" cy="95" r="4" fill="#ef4444" />
+    <text x="50" y="125" fill="#0f766e" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="700" text-anchor="middle">24/7 GEYSER</text>
+    <path d="M30,150 L30,240" stroke="#ef4444" stroke-width="4" fill="none" />
+    <path d="M70,150 L70,240" stroke="#0284c7" stroke-width="4" fill="none" />
+  </g>
+
+  <!-- Washbasin & Mirror -->
+  <g transform="translate(380, 70)">
+    <rect x="20" y="0" width="120" height="150" rx="10" fill="#e0f2fe" stroke="#38bdf8" stroke-width="3" />
+    <path d="M0,180 C0,240 160,240 160,180 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" />
+    <rect x="10" y="170" width="140" height="16" rx="3" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+    <path d="M80,170 L80,140 Q80,125 70,125 L65,125" stroke="#94a3b8" stroke-width="6" fill="none" stroke-linecap="round" />
+    <rect x="65" y="230" width="30" height="160" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  </g>
+
+  <!-- Shower Spray Area -->
+  <g transform="translate(640, 70)">
+    <path d="M0,40 L60,40 L60,70" stroke="#94a3b8" stroke-width="6" fill="none" />
+    <ellipse cx="60" cy="75" rx="22" ry="8" fill="#cbd5e1" />
+    <line x1="50" y1="85" x2="45" y2="180" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6" opacity="0.6" />
+    <line x1="60" y1="85" x2="60" y2="190" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6" opacity="0.6" />
+    <line x1="70" y1="85" x2="75" y2="180" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6" opacity="0.6" />
+  </g>
+
+  <!-- Caption Pill -->
+  <g transform="translate(30, 520)">
+    <rect width="280" height="42" rx="21" fill="#0f2b48" opacity="0.95" stroke="#10b981" stroke-width="2" />
+    <circle cx="24" cy="21" r="7" fill="#10b981" />
+    <text x="40" y="26" fill="#ffffff" font-family="'Segoe UI', Poppins, sans-serif" font-size="12" font-weight="700">Attached Washroom with Geyser</text>
+  </g>
+</svg>

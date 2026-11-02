@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roomWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="woodFinish" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#854d0e" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+    <linearGradient id="bedCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="bedCover2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <filter id="bedShadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <!-- Room Interior Wall -->
+  <rect width="800" height="420" fill="url(#roomWall)" />
+  
+  <!-- Tiled Floor with Perspective -->
+  <polygon points="0,420 800,420 800,600 0,600" fill="#cbd5e1" />
+  <line x1="200" y1="420" x2="120" y2="600" stroke="#94a3b8" stroke-width="2" />
+  <line x1="400" y1="420" x2="400" y2="600" stroke="#94a3b8" stroke-width="2" />
+  <line x1="600" y1="420" x2="680" y2="600" stroke="#94a3b8" stroke-width="2" />
+  <line x1="0" y1="510" x2="800" y2="510" stroke="#94a3b8" stroke-width="2" />
+
+  <!-- Sunny Window with Curtains -->
+  <rect x="310" y="80" width="180" height="180" rx="4" fill="#bae6fd" stroke="#94a3b8" stroke-width="4" />
+  <line x1="400" y1="80" x2="400" y2="260" stroke="#64748b" stroke-width="3" />
+  <line x1="310" y1="170" x2="490" y2="170" stroke="#64748b" stroke-width="3" />
+  <!-- Curtains -->
+  <polygon points="295,70 330,70 320,270 290,270" fill="#f97316" opacity="0.8" />
+  <polygon points="470,70 505,70 510,270 480,270" fill="#f97316" opacity="0.8" />
+  <line x1="280" y1="68" x2="520" y2="68" stroke="#334155" stroke-width="4" />
+
+  <!-- Ceiling Fan -->
+  <g transform="translate(400, 30)">
+    <circle cx="0" cy="15" r="8" fill="#334155" />
+    <path d="M-60,15 L60,15" stroke="#475569" stroke-width="8" stroke-linecap="round" />
+    <line x1="0" y1="0" x2="0" y2="15" stroke="#64748b" stroke-width="4" />
+  </g>
+
+  <!-- Left Bed (Bed 1) -->
+  <g filter="url(#bedShadow)">
+    <!-- Headboard -->
+    <rect x="60" y="270" width="18" height="150" rx="4" fill="#334155" />
+    <!-- Bed frame -->
+    <rect x="70" y="340" width="220" height="110" rx="6" fill="#1e293b" />
+    <!-- Mattress & Linen -->
+    <rect x="72" y="335" width="210" height="95" rx="4" fill="url(#bedCover)" />
+    <!-- Pillow -->
+    <rect x="80" y="345" width="45" height="70" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <!-- Blanket fold -->
+    <rect x="150" y="335" width="132" height="95" rx="4" fill="#1d4ed8" />
+    <!-- Bed legs -->
+    <rect x="75" y="440" width="8" height="40" fill="#0f172a" />
+    <rect x="270" y="440" width="8" height="40" fill="#0f172a" />
+  </g>
+
+  <!-- Right Bed (Bed 2) -->
+  <g filter="url(#bedShadow)">
+    <!-- Headboard -->
+    <rect x="720" y="270" width="18" height="150" rx="4" fill="#334155" />
+    <!-- Bed frame -->
+    <rect x="510" y="340" width="220" height="110" rx="6" fill="#1e293b" />
+    <!-- Mattress & Linen -->
+    <rect x="518" y="335" width="210" height="95" rx="4" fill="url(#bedCover2)" />
+    <!-- Pillow -->
+    <rect x="675" y="345" width="45" height="70" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <!-- Blanket fold -->
+    <rect x="518" y="335" width="132" height="95" rx="4" fill="#c2410c" />
+    <!-- Bed legs -->
+    <rect x="520" y="440" width="8" height="40" fill="#0f172a" />
+    <rect x="715" y="440" width="8" height="40" fill="#0f172a" />
+  </g>
+
+  <!-- Dual Lockable Cupboards on Left Wall -->
+  <rect x="15" y="140" width="45" height="260" rx="4" fill="url(#woodFinish)" stroke="#451a03" stroke-width="2" />
+  <line x1="37" y1="140" x2="37" y2="400" stroke="#451a03" stroke-width="2" />
+  <circle cx="32" cy="270" r="3" fill="#facc15" />
+  <circle cx="42" cy="270" r="3" fill="#facc15" />
+
+  <!-- Center Study Table & Chairs -->
+  <g filter="url(#bedShadow)">
+    <rect x="330" y="310" width="140" height="12" rx="3" fill="url(#woodFinish)" />
+    <rect x="340" y="322" width="8" height="130" fill="#334155" />
+    <rect x="452" y="322" width="8" height="130" fill="#334155" />
+    <!-- Laptop on table -->
+    <polygon points="370,308 430,308 435,310 365,310" fill="#64748b" />
+    <rect x="375" y="275" width="50" height="33" rx="2" fill="#0f172a" stroke="#94a3b8" stroke-width="2" />
+    <rect x="378" y="278" width="44" height="27" fill="#38bdf8" opacity="0.6" />
+    <!-- Study lamp -->
+    <path d="M350,310 L350,260 L362,260" stroke="#f59e0b" stroke-width="3" fill="none" />
+    <polygon points="358,255 372,255 376,268 354,268" fill="#f59e0b" />
+    <!-- Ergonomic Chairs -->
+    <rect x="365" y="350" width="30" height="24" rx="4" fill="#334155" />
+    <rect x="405" y="350" width="30" height="24" rx="4" fill="#334155" />
+    <rect x="378" y="374" width="4" height="70" fill="#1e293b" />
+    <rect x="418" y="374" width="4" height="70" fill="#1e293b" />
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(30, 30)">
+    <rect width="210" height="42" rx="21" fill="#0f2b48" opacity="0.9" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="24" cy="21" r="7" fill="#10b981" />
+    <text x="40" y="26" fill="#ffffff" font-family="'Segoe UI', Poppins, sans-serif" font-size="13" font-weight="700">2-Sharing Room</text>
+  </g>
+</svg>

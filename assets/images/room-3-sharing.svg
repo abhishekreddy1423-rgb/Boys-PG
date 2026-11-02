@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roomWall3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="cots1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="cots2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="cots3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#roomWall3)" />
+  <polygon points="0,420 800,420 800,600 0,600" fill="#94a3b8" />
+  
+  <!-- Back Wall Windows -->
+  <rect x="180" y="80" width="120" height="130" rx="4" fill="#e0f2fe" stroke="#64748b" stroke-width="3" />
+  <line x1="240" y1="80" x2="240" y2="210" stroke="#64748b" stroke-width="2" />
+  <rect x="500" y="80" width="120" height="130" rx="4" fill="#e0f2fe" stroke="#64748b" stroke-width="3" />
+  <line x1="560" y1="80" x2="560" y2="210" stroke="#64748b" stroke-width="2" />
+
+  <!-- 3 Beds Layout -->
+  <!-- Bed 1 Left -->
+  <g transform="translate(60, 310)">
+    <rect x="0" y="30" width="180" height="90" rx="4" fill="url(#cots1)" />
+    <rect x="0" y="0" width="12" height="120" fill="#1e293b" />
+    <rect x="10" y="40" width="35" height="55" rx="6" fill="#ffffff" />
+    <rect x="168" y="100" width="10" height="45" fill="#0f172a" />
+    <rect x="10" y="100" width="10" height="45" fill="#0f172a" />
+  </g>
+
+  <!-- Bed 2 Center -->
+  <g transform="translate(310, 310)">
+    <rect x="0" y="30" width="180" height="90" rx="4" fill="url(#cots2)" />
+    <rect x="0" y="0" width="12" height="120" fill="#1e293b" />
+    <rect x="10" y="40" width="35" height="55" rx="6" fill="#ffffff" />
+    <rect x="168" y="100" width="10" height="45" fill="#0f172a" />
+    <rect x="10" y="100" width="10" height="45" fill="#0f172a" />
+  </g>
+
+  <!-- Bed 3 Right -->
+  <g transform="translate(560, 310)">
+    <rect x="0" y="30" width="180" height="90" rx="4" fill="url(#cots3)" />
+    <rect x="0" y="0" width="12" height="120" fill="#1e293b" />
+    <rect x="10" y="40" width="35" height="55" rx="6" fill="#ffffff" />
+    <rect x="168" y="100" width="10" height="45" fill="#0f172a" />
+    <rect x="10" y="100" width="10" height="45" fill="#0f172a" />
+  </g>
+
+  <!-- 3 Lockable Cupboards on Back Wall -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="160" height="140" rx="4" fill="#78350f" stroke="#451a03" stroke-width="3" />
+    <line x1="53" y1="0" x2="53" y2="140" stroke="#451a03" stroke-width="2" />
+    <line x1="106" y1="0" x2="106" y2="140" stroke="#451a03" stroke-width="2" />
+    <circle cx="45" cy="70" r="3" fill="#facc15" />
+    <circle cx="98" cy="70" r="3" fill="#facc15" />
+    <circle cx="151" cy="70" r="3" fill="#facc15" />
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(30, 30)">
+    <rect width="210" height="42" rx="21" fill="#0f2b48" opacity="0.9" stroke="#f59e0b" stroke-width="2" />
+    <circle cx="24" cy="21" r="7" fill="#f59e0b" />
+    <text x="40" y="26" fill="#ffffff" font-family="'Segoe UI', Poppins, sans-serif" font-size="13" font-weight="700">3-Sharing Room</text>
+  </g>
+</svg>

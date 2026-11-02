@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#f0f9ff" />
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <linearGradient id="royalBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0f2b48" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyGrad)" />
+  
+  <!-- Sun & Clouds -->
+  <circle cx="680" cy="90" r="45" fill="#fef08a" opacity="0.8" />
+  <ellipse cx="200" cy="110" rx="70" ry="24" fill="#ffffff" opacity="0.85" />
+  <ellipse cx="240" cy="100" rx="50" ry="28" fill="#ffffff" opacity="0.85" />
+
+  <!-- Ground / Paved Driveway -->
+  <rect y="440" width="800" height="160" fill="#334155" />
+  <polygon points="0,440 800,440 800,455 0,455" fill="#e2e8f0" opacity="0.4" />
+  <!-- Parking markings -->
+  <line x1="120" y1="460" x2="180" y2="580" stroke="#f1f5f9" stroke-width="4" stroke-dasharray="10 10" />
+  <line x1="260" y1="460" x2="320" y2="580" stroke="#f1f5f9" stroke-width="4" stroke-dasharray="10 10" />
+  <line x1="400" y1="460" x2="460" y2="580" stroke="#f1f5f9" stroke-width="4" stroke-dasharray="10 10" />
+
+  <!-- Main PG Building (3-Story Modern Facility) -->
+  <g filter="url(#softShadow)">
+    <!-- Base structure -->
+    <rect x="180" y="140" width="440" height="310" rx="8" fill="url(#wallGrad)" stroke="#cbd5e1" stroke-width="2" />
+    
+    <!-- Top Parapet Roof & Water Tank -->
+    <rect x="160" y="125" width="480" height="18" rx="4" fill="url(#royalBlue)" />
+    <rect x="220" y="85" width="80" height="40" rx="4" fill="#0284c7" />
+    <text x="260" y="110" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">RO TANK</text>
+
+    <!-- Solar Water Heater on Roof -->
+    <rect x="420" y="95" width="120" height="20" rx="3" fill="#475569" transform="rotate(-15 420 95)" />
+    <rect x="520" y="80" width="30" height="30" rx="15" fill="#ea580c" />
+
+    <!-- Name Signboard on Building Front -->
+    <rect x="230" y="152" width="340" height="42" rx="6" fill="url(#royalBlue)" stroke="#fbbf24" stroke-width="2" />
+    <text x="400" y="174" fill="#fbbf24" font-family="'Segoe UI', Poppins, sans-serif" font-size="14" font-weight="800" text-anchor="middle" letter-spacing="0.5">SRI MALLIKARJUNA SWAMI</text>
+    <text x="400" y="188" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">THE BOYS PG (OPP. MITS COLLEGE)</text>
+
+    <!-- Architectural Facade Orange Accent Stripes -->
+    <rect x="195" y="200" width="10" height="240" fill="url(#accentOrange)" rx="2" />
+    <rect x="595" y="200" width="10" height="240" fill="url(#accentOrange)" rx="2" />
+
+    <!-- Floor 3 Windows -->
+    <rect x="230" y="210" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+    <line x1="270" y1="210" x2="270" y2="265" stroke="#475569" stroke-width="2" />
+    <rect x="360" y="210" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+    <line x1="400" y1="210" x2="400" y2="265" stroke="#475569" stroke-width="2" />
+    <rect x="490" y="210" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+    <line x1="530" y1="210" x2="530" y2="265" stroke="#475569" stroke-width="2" />
+
+    <!-- Floor 2 Windows with Balconies -->
+    <rect x="230" y="290" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+    <line x1="270" y1="290" x2="270" y2="345" stroke="#475569" stroke-width="2" />
+    <rect x="225" y="335" width="90" height="12" rx="2" fill="#94a3b8" />
+
+    <rect x="360" y="290" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+    <line x1="400" y1="290" x2="400" y2="345" stroke="#475569" stroke-width="2" />
+    <rect x="355" y="335" width="90" height="12" rx="2" fill="#94a3b8" />
+
+    <rect x="490" y="290" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+    <line x1="530" y1="290" x2="530" y2="345" stroke="#475569" stroke-width="2" />
+    <rect x="485" y="335" width="90" height="12" rx="2" fill="#94a3b8" />
+
+    <!-- Ground Floor Entrance & Reception Glass Door -->
+    <rect x="350" y="375" width="100" height="75" rx="4" fill="#0f172a" stroke="#cbd5e1" stroke-width="3" />
+    <rect x="355" y="380" width="42" height="70" fill="#38bdf8" opacity="0.4" />
+    <rect x="403" y="380" width="42" height="70" fill="#38bdf8" opacity="0.4" />
+    <circle cx="392" cy="418" r="3" fill="#f8fafc" />
+    <circle cx="408" cy="418" r="3" fill="#f8fafc" />
+
+    <!-- Entrance Canopy -->
+    <polygon points="330,375 470,375 485,365 315,365" fill="url(#accentOrange)" />
+
+    <!-- Ground Floor Windows -->
+    <rect x="230" y="375" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+    <rect x="490" y="375" width="80" height="55" rx="4" fill="#0284c7" opacity="0.3" stroke="#64748b" stroke-width="2" />
+  </g>
+
+  <!-- Front Boundary Wall & Stainless Steel Gate -->
+  <rect x="60" y="420" width="220" height="40" fill="#94a3b8" />
+  <rect x="520" y="420" width="220" height="40" fill="#94a3b8" />
+  
+  <!-- Gate Pillars with Lights -->
+  <rect x="270" y="390" width="30" height="70" rx="3" fill="#475569" />
+  <circle cx="285" cy="385" r="8" fill="#fef08a" />
+  
+  <rect x="500" y="390" width="30" height="70" rx="3" fill="#475569" />
+  <circle cx="515" cy="385" r="8" fill="#fef08a" />
+
+  <!-- Gate Grill -->
+  <line x1="300" y1="410" x2="500" y2="410" stroke="#cbd5e1" stroke-width="4" />
+  <line x1="300" y1="450" x2="500" y2="450" stroke="#cbd5e1" stroke-width="4" />
+  <line x1="320" y1="400" x2="320" y2="460" stroke="#94a3b8" stroke-width="3" />
+  <line x1="360" y1="400" x2="360" y2="460" stroke="#94a3b8" stroke-width="3" />
+  <line x1="400" y1="400" x2="400" y2="460" stroke="#94a3b8" stroke-width="3" />
+  <line x1="440" y1="400" x2="440" y2="460" stroke="#94a3b8" stroke-width="3" />
+  <line x1="480" y1="400" x2="480" y2="460" stroke="#94a3b8" stroke-width="3" />
+
+  <!-- Greenery & Ornamental Trees -->
+  <ellipse cx="120" cy="410" rx="45" ry="50" fill="#15803d" opacity="0.9" />
+  <ellipse cx="680" cy="410" rx="45" ry="50" fill="#15803d" opacity="0.9" />
+  <rect x="115" y="430" width="10" height="30" fill="#78350f" />
+  <rect x="675" y="430" width="10" height="30" fill="#78350f" />
+
+  <!-- Overlay Watermark / Location Badge -->
+  <g transform="translate(40, 520)">
+    <rect width="250" height="48" rx="24" fill="#0f172a" opacity="0.92" stroke="#ea580c" stroke-width="2" />
+    <circle cx="26" cy="24" r="14" fill="#ea580c" />
+    <path d="M26 15 C21 15 17 19 17 24 C17 29 26 34 26 34 C26 34 35 29 35 24 C35 19 31 15 26 15 Z" fill="#ffffff" />
+    <circle cx="26" cy="22" r="3.5" fill="#ea580c" />
+    <text x="50" y="21" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="12" font-weight="700">Opposite MITS College</text>
+    <text x="50" y="36" fill="#94a3b8" font-family="'Segoe UI', Inter, sans-serif" font-size="10">Angallu, AP • 2 Min Walk</text>
+  </g>
+</svg>

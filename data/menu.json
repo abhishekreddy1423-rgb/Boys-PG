@@ -1,0 +1,51 @@
+[
+  {
+    "day": "Monday",
+    "te": "సోమవారము",
+    "breakfast": ["Idli", "Vada"],
+    "lunch": ["Rice", "Dal", "Vadiyalu", "Rasam", "Curd"],
+    "dinner": ["Veg Rice"]
+  },
+  {
+    "day": "Tuesday",
+    "te": "మంగళవారము",
+    "breakfast": ["Dosa"],
+    "lunch": ["Rice", "Sambar", "Vadiyalu"],
+    "dinner": ["Egg Rice"]
+  },
+  {
+    "day": "Wednesday",
+    "te": "బుధవారము",
+    "breakfast": ["Puri"],
+    "lunch": ["Chicken Curry / Chicken Kabab"],
+    "dinner": ["Jeera Rice"]
+  },
+  {
+    "day": "Thursday",
+    "te": "గురువారము",
+    "breakfast": ["Pongal"],
+    "lunch": ["Rice", "Leafy-vegetable Dal", "Ladies' Finger (Okra) Fry"],
+    "dinner": ["Uttapam / Dosa"]
+  },
+  {
+    "day": "Friday",
+    "te": "శుక్రవారము",
+    "breakfast": ["Bondalu"],
+    "lunch": ["Kushka"],
+    "dinner": ["Egg Chapati"]
+  },
+  {
+    "day": "Saturday",
+    "te": "శనివారము",
+    "breakfast": ["Dosa"],
+    "lunch": ["Rice", "Alasanda (Cowpea) Dal", "Potato Fry"],
+    "dinner": ["Sweet / Gobi Rice"]
+  },
+  {
+    "day": "Sunday",
+    "te": "ఆదివారము",
+    "breakfast": ["Pulihora"],
+    "lunch": ["Dum Biryani"],
+    "dinner": ["Rice", "Dal", "Rasam"]
+  }
+]

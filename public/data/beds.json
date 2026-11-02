@@ -1,0 +1,345 @@
+[
+  {
+    "room": "101",
+    "type": "2 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "101",
+    "type": "2 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "102",
+    "type": "3 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "102",
+    "type": "3 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "102",
+    "type": "3 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "103",
+    "type": "3 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "103",
+    "type": "3 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "103",
+    "type": "3 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "104",
+    "type": "3 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "104",
+    "type": "3 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "104",
+    "type": "3 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "105",
+    "type": "3 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "105",
+    "type": "3 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "105",
+    "type": "3 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "106",
+    "type": "3 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "106",
+    "type": "3 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "106",
+    "type": "3 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "201",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "201",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "201",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "201",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "202",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "202",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "202",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "202",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "203",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "203",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "203",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "203",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "204",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "204",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "204",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "204",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "205",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "205",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "205",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "205",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "206",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "206",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "206",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "206",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "207",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "207",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "207",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "207",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "208",
+    "type": "4 Sharing",
+    "bed": 1,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "208",
+    "type": "4 Sharing",
+    "bed": 2,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "208",
+    "type": "4 Sharing",
+    "bed": 3,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  },
+  {
+    "room": "208",
+    "type": "4 Sharing",
+    "bed": 4,
+    "status": "available",
+    "updatedAt": "2026-11-01T14:42:02.284Z"
+  }
+]

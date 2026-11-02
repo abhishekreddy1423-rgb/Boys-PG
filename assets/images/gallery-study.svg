@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studyWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="warmLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Cozy Study Hall Atmosphere -->
+  <rect width="800" height="420" fill="url(#studyWall)" />
+  <polygon points="0,420 800,420 800,600 0,600" fill="#334155" />
+  
+  <!-- LED Ceiling Tube Lights -->
+  <rect x="180" y="20" width="160" height="8" rx="4" fill="#ffffff" />
+  <polygon points="180,28 340,28 420,380 100,380" fill="url(#warmLight)" />
+
+  <rect x="460" y="20" width="160" height="8" rx="4" fill="#ffffff" />
+  <polygon points="460,28 620,28 700,380 380,380" fill="url(#warmLight)" />
+
+  <!-- Motivation Wall Posters -->
+  <rect x="250" y="80" width="120" height="70" rx="4" fill="#1e3a8a" stroke="#38bdf8" stroke-width="2" />
+  <text x="310" y="110" fill="#ffffff" font-family="'Segoe UI', Poppins, sans-serif" font-size="10" font-weight="700" text-anchor="middle">SILENT STUDY</text>
+  <text x="310" y="128" fill="#38bdf8" font-family="'Segoe UI', Inter, sans-serif" font-size="9" text-anchor="middle">Focus on Goals</text>
+
+  <rect x="430" y="80" width="120" height="70" rx="4" fill="#78350f" stroke="#f59e0b" stroke-width="2" />
+  <text x="490" y="110" fill="#ffffff" font-family="'Segoe UI', Poppins, sans-serif" font-size="10" font-weight="700" text-anchor="middle">5G WI-FI ZONE</text>
+  <text x="490" y="128" fill="#fbbf24" font-family="'Segoe UI', Inter, sans-serif" font-size="9" text-anchor="middle">Zero Buffer</text>
+
+  <!-- Large Study Table with Partitions & Power Sockets -->
+  <g transform="translate(120, 240)">
+    <!-- Desk Top -->
+    <rect x="0" y="60" width="560" height="24" rx="4" fill="#854d0e" stroke="#451a03" stroke-width="2" />
+    <rect x="30" y="84" width="14" height="180" fill="#1e293b" />
+    <rect x="270" y="84" width="14" height="180" fill="#1e293b" />
+    <rect x="510" y="84" width="14" height="180" fill="#1e293b" />
+    <!-- Center Dividing Privacy Board -->
+    <rect x="0" y="20" width="560" height="40" fill="#475569" opacity="0.85" />
+    <!-- Individual Study Pod 1 (Laptop & Books) -->
+    <rect x="40" y="40" width="40" height="20" fill="#0284c7" />
+    <rect x="100" y="25" width="40" height="35" rx="3" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+    <!-- Individual Study Pod 2 (Books Stack & Lamp) -->
+    <rect x="230" y="35" width="25" height="25" rx="2" fill="#ef4444" />
+    <rect x="260" y="38" width="25" height="22" rx="2" fill="#10b981" />
+    <path d="M200,60 L200,15 L215,15" stroke="#f59e0b" stroke-width="2" fill="none" />
+    <!-- Individual Study Pod 3 (Open Notebook & Pen) -->
+    <polygon points="400,50 440,50 450,58 390,58" fill="#f8fafc" />
+    <!-- Individual Study Pod 4 (Laptop Open) -->
+    <rect x="470" y="25" width="40" height="35" rx="3" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+
+    <!-- Chairs -->
+    <rect x="80" y="130" width="45" height="50" rx="4" fill="#1e293b" />
+    <rect x="220" y="130" width="45" height="50" rx="4" fill="#1e293b" />
+    <rect x="360" y="130" width="45" height="50" rx="4" fill="#1e293b" />
+    <rect x="490" y="130" width="45" height="50" rx="4" fill="#1e293b" />
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(30, 520)">
+    <rect width="210" height="42" rx="21" fill="#0f2b48" opacity="0.95" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="24" cy="21" r="7" fill="#38bdf8" />
+    <text x="40" y="26" fill="#ffffff" font-family="'Segoe UI', Poppins, sans-serif" font-size="13" font-weight="700">Quiet Study Hall</text>
+  </g>
+</svg>

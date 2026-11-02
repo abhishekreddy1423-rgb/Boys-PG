@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="loungeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="darkOverlay2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#0b1329" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0b1329" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#loungeGrad)" />
+  <polygon points="0,600 1600,600 1600,900 0,900" fill="#334155" />
+
+  <!-- Study Pod Desks with Laptops and Reading Lights -->
+  <g transform="translate(200, 280)">
+    <rect x="0" y="140" width="1200" height="40" rx="8" fill="#854d0e" stroke="#451a03" stroke-width="4" />
+    <rect x="40" y="180" width="30" height="260" fill="#1e293b" />
+    <rect x="580" y="180" width="30" height="260" fill="#1e293b" />
+    <rect x="1130" y="180" width="30" height="260" fill="#1e293b" />
+    
+    <!-- Dividing Privacy Screens -->
+    <rect x="0" y="40" width="1200" height="100" rx="4" fill="#475569" opacity="0.9" />
+
+    <!-- Pod 1 -->
+    <rect x="120" y="60" width="100" height="70" rx="4" fill="#38bdf8" stroke="#1e293b" stroke-width="3" />
+    <!-- Pod 2 -->
+    <rect x="420" y="60" width="100" height="70" rx="4" fill="#38bdf8" stroke="#1e293b" stroke-width="3" />
+    <!-- Pod 3 -->
+    <rect x="720" y="60" width="100" height="70" rx="4" fill="#38bdf8" stroke="#1e293b" stroke-width="3" />
+    <!-- Pod 4 -->
+    <rect x="1000" y="60" width="100" height="70" rx="4" fill="#38bdf8" stroke="#1e293b" stroke-width="3" />
+
+    <!-- Study Chairs -->
+    <rect x="130" y="220" width="80" height="90" rx="8" fill="#0f172a" />
+    <rect x="430" y="220" width="80" height="90" rx="8" fill="#0f172a" />
+    <rect x="730" y="220" width="80" height="90" rx="8" fill="#0f172a" />
+    <rect x="1010" y="220" width="80" height="90" rx="8" fill="#0f172a" />
+  </g>
+
+  <!-- High-speed 5G Wi-Fi Routers with Signal Waves -->
+  <g transform="translate(800, 100)">
+    <circle cx="0" cy="0" r="14" fill="#ea580c" />
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#ea580c" stroke-width="3" stroke-dasharray="8 6" opacity="0.8" />
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#ea580c" stroke-width="3" stroke-dasharray="10 8" opacity="0.5" />
+    <text x="0" y="80" fill="#f8fafc" font-family="'Segoe UI', Poppins, sans-serif" font-size="16" font-weight="700" text-anchor="middle">5G OPTICAL FIBER WI-FI ZONE</text>
+  </g>
+
+  <!-- Dark Overlay for text readability -->
+  <rect width="1600" height="900" fill="url(#darkOverlay2)" />
+</svg>

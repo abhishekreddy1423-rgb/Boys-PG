@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="diningHGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+    <linearGradient id="darkOverlay3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#0b1329" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0b1329" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="550" fill="url(#diningHGrad)" />
+  <polygon points="0,550 1600,550 1600,900 0,900" fill="#cbd5e1" />
+
+  <!-- Buffet Serving Counters with Steam -->
+  <rect x="250" y="240" width="1100" height="140" rx="10" fill="#475569" stroke="#1e293b" stroke-width="4" />
+  <text x="800" y="320" fill="#f8fafc" font-family="'Segoe UI', Poppins, sans-serif" font-size="24" font-weight="800" text-anchor="middle">UNLIMITED SOUTH INDIAN HOMELY MESS • HOT GHEE &amp; FRESH CHUTNEYS</text>
+
+  <!-- Large Dining Tables -->
+  <g transform="translate(200, 480)">
+    <rect x="0" y="0" width="550" height="40" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="3" />
+    <rect x="50" y="40" width="20" height="180" fill="#64748b" />
+    <rect x="480" y="40" width="20" height="180" fill="#64748b" />
+  </g>
+  <g transform="translate(850, 480)">
+    <rect x="0" y="0" width="550" height="40" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="3" />
+    <rect x="50" y="40" width="20" height="180" fill="#64748b" />
+    <rect x="480" y="40" width="20" height="180" fill="#64748b" />
+  </g>
+
+  <!-- Dark Overlay for text readability -->
+  <rect width="1600" height="900" fill="url(#darkOverlay3)" />
+</svg>

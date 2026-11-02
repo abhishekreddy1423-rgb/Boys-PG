@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cupboardWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="50%" stop-color="#92400e" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="wallC" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="460" fill="url(#wallC)" />
+  <polygon points="0,460 800,460 800,600 0,600" fill="#94a3b8" />
+
+  <!-- 3 Individual Wooden Wardrobes / Cupboards with Keys & Lockers -->
+  <g transform="translate(80, 80)">
+    <!-- Main Wardrobe Frame -->
+    <rect x="0" y="0" width="400" height="380" rx="6" fill="url(#cupboardWood)" stroke="#451a03" stroke-width="4" />
+    <!-- 3 Door Partitions -->
+    <line x1="133" y1="0" x2="133" y2="380" stroke="#451a03" stroke-width="3" />
+    <line x1="266" y1="0" x2="266" y2="380" stroke="#451a03" stroke-width="3" />
+
+    <!-- Upper storage shelves -->
+    <line x1="0" y1="90" x2="400" y2="90" stroke="#451a03" stroke-width="2" />
+
+    <!-- Lock Keyholes & Brass Handles -->
+    <circle cx="115" cy="220" r="5" fill="#facc15" />
+    <rect x="113" y="224" width="4" height="8" fill="#facc15" />
+    <rect x="100" y="200" width="6" height="40" rx="3" fill="#cbd5e1" />
+
+    <circle cx="248" cy="220" r="5" fill="#facc15" />
+    <rect x="246" y="224" width="4" height="8" fill="#facc15" />
+    <rect x="233" y="200" width="6" height="40" rx="3" fill="#cbd5e1" />
+
+    <circle cx="380" cy="220" r="5" fill="#facc15" />
+    <rect x="378" y="224" width="4" height="8" fill="#facc15" />
+    <rect x="365" y="200" width="6" height="40" rx="3" fill="#cbd5e1" />
+
+    <text x="66" y="50" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">BED 1 LOCKER</text>
+    <text x="200" y="50" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">BED 2 LOCKER</text>
+    <text x="333" y="50" fill="#ffffff" font-family="'Segoe UI', Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">BED 3 LOCKER</text>
+  </g>
+
+  <!-- Adjacent Study Desk with Laptop -->
+  <g transform="translate(520, 220)">
+    <rect x="0" y="60" width="220" height="20" rx="4" fill="#a16207" stroke="#78350f" stroke-width="2" />
+    <rect x="20" y="80" width="10" height="160" fill="#334155" />
+    <rect x="190" y="80" width="10" height="160" fill="#334155" />
+    
+    <!-- Open Laptop on Desk -->
+    <rect x="70" y="15" width="80" height="45" rx="3" fill="#0f172a" stroke="#cbd5e1" stroke-width="2" />
+    <rect x="75" y="19" width="70" height="37" fill="#38bdf8" opacity="0.6" />
+    <polygon points="60,60 160,60 165,62 55,62" fill="#64748b" />
+
+    <!-- Notebook & Books -->
+    <rect x="15" y="48" width="35" height="12" fill="#ef4444" rx="2" />
+    <rect x="18" y="38" width="30" height="10" fill="#10b981" rx="2" />
+  </g>
+
+  <!-- Caption Pill -->
+  <g transform="translate(30, 520)">
+    <rect width="320" height="42" rx="21" fill="#0f2b48" opacity="0.95" stroke="#ea580c" stroke-width="2" />
+    <circle cx="24" cy="21" r="7" fill="#ea580c" />
+    <text x="40" y="26" fill="#ffffff" font-family="'Segoe UI', Poppins, sans-serif" font-size="12" font-weight="700">Individual Cupboards &amp; Study Table</text>
+  </g>
+</svg>
